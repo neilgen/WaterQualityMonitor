@@ -1,8 +1,9 @@
-QT       += core gui
+QT       += core gui  sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
+CONFIG += serialport
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -18,14 +19,29 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     mainwidget.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    uis/varsettable.cpp \
+    serialport/splisten.cpp \
+    uis/curvefittingwidget.cpp \
+    uis/processsetwidget.cpp \
+    uis/examinetestwidget.cpp
 
 HEADERS += \
     mainwidget.h \
-    qcustomplot.h
+    qcustomplot.h \
+    uis/varsettable.h \
+    datastruct.h \
+    serialport/splisten.h \
+    uis/curvefittingwidget.h \
+    uis/processsetwidget.h \
+    uis/examinetestwidget.h
 
 FORMS += \
-    mainwidget.ui
+    mainwidget.ui \
+    uis/varsettable.ui \
+    uis/curvefittingwidget.ui \
+    uis/processsetwidget.ui \
+    uis/examinetestwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
