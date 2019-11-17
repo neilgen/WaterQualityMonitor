@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+#include "datas.h"
+
 namespace Ui {
 class ProcessSetWidget;
 }

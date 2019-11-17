@@ -1,9 +1,7 @@
-#ifndef DATASTRUCT_H
-#define DATASTRUCT_H
+#ifndef VARSTRUCT_H
+#define VARSTRUCT_H
 
 #include <QString>
-
-//一些数据结构的定义
 
 //变量设计
 struct Var
@@ -33,9 +31,4 @@ struct Var
     }
 };
 
-//变量列表
-typedef QList<Var> ListVar;
-
-
-
-#endif // DATASTRUCT_H
+#endif // VARSTRUCT_H

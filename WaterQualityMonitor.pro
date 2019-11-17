@@ -24,17 +24,23 @@ SOURCES += \
     serialport/splisten.cpp \
     uis/curvefittingwidget.cpp \
     uis/processsetwidget.cpp \
-    uis/examinetestwidget.cpp
+    uis/examinetestwidget.cpp \
+    datastruct/processdata.cpp \
+    datastruct/vardata.cpp
 
 HEADERS += \
     mainwidget.h \
     qcustomplot.h \
     uis/varsettable.h \
-    datastruct.h \
     serialport/splisten.h \
     uis/curvefittingwidget.h \
     uis/processsetwidget.h \
-    uis/examinetestwidget.h
+    uis/examinetestwidget.h \
+    datastruct/processstruct.h \
+    datastruct/processdata.h \
+    datastruct/varstruct.h \
+    datastruct/vardata.h \
+    datas.h
 
 FORMS += \
     mainwidget.ui \

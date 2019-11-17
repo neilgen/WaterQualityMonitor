@@ -2,7 +2,7 @@
 #define VARSETTABLE_H
 
 #include <QWidget>
-#include "datastruct.h"
+#include "datas.h"
 
 namespace Ui {
 class VarSetTable;
@@ -25,11 +25,12 @@ private slots:
 private:
     void readConf();
     void writeConf();
+    void resetTable();
 
 private:
     Ui::VarSetTable *ui;
 
-    ListVar mListVar;
+    QList<Var> vars;
 };
 
 #endif // VARSETTABLE_H
