@@ -1,4 +1,4 @@
-QT       += core gui  sql
+QT       += core gui  sql xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,7 +26,10 @@ SOURCES += \
     uis/processsetwidget.cpp \
     uis/examinetestwidget.cpp \
     datastruct/processdata.cpp \
-    datastruct/vardata.cpp
+    datastruct/vardata.cpp \
+    datastruct/userdata.cpp \
+    datastruct/logdata.cpp \
+    datastruct/waterdb.cpp
 
 HEADERS += \
     mainwidget.h \
@@ -40,7 +43,12 @@ HEADERS += \
     datastruct/processdata.h \
     datastruct/varstruct.h \
     datastruct/vardata.h \
-    datas.h
+    datas.h \
+    datastruct/userstruct.h \
+    datastruct/userdata.h \
+    datastruct/logstruct.h \
+    datastruct/logdata.h \
+    datastruct/waterdb.h
 
 FORMS += \
     mainwidget.ui \
@@ -53,3 +61,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc

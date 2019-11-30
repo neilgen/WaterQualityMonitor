@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/config/users.xml</file>
+    </qresource>
+</RCC>

@@ -18,7 +18,7 @@ enum ACTION_PARAM_TYPE
     ACTION_PARAM_DELAY = 6,     //延时
 
     //在上方添加动作参数
-    ACTION_PARAM_COUNT      //参数上限
+    ACTION_PARAM_TYPE_COUNT      //参数上限
 };
 
 //动作参数
@@ -86,7 +86,7 @@ enum ACTIONBAG_PARAM_TYPE
     ACTIONBAG_PARAM_TIME = 4,   //时间
 
     //在上方添加动作包参数类型
-    ACTIONBAG_PARAM_COUNT
+    ACTIONBAG_PARAM_TYPE_COUNT
 };
 
 //动作包参数
@@ -160,7 +160,7 @@ enum PRPCESS_PARAM_TYPE
     PRPCESS_PARAM_TIME = 4,     //时间
     PRPCESS_PARAM_LIGHT = 5,    //光通道
     //在上方添加
-    PRPCESS_PARAM_COUNT
+    PRPCESS_PARAM_TYPE_COUNT
 };
 
 //量程动作流程 参数
