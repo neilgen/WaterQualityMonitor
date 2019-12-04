@@ -29,7 +29,8 @@ SOURCES += \
     datastruct/vardata.cpp \
     datastruct/userdata.cpp \
     datastruct/logdata.cpp \
-    datastruct/waterdb.cpp
+    datastruct/waterdb.cpp \
+    uis/logindialog.cpp
 
 HEADERS += \
     mainwidget.h \
@@ -48,14 +49,16 @@ HEADERS += \
     datastruct/userdata.h \
     datastruct/logstruct.h \
     datastruct/logdata.h \
-    datastruct/waterdb.h
+    datastruct/waterdb.h \
+    uis/logindialog.h
 
 FORMS += \
     mainwidget.ui \
     uis/varsettable.ui \
     uis/curvefittingwidget.ui \
     uis/processsetwidget.ui \
-    uis/examinetestwidget.ui
+    uis/examinetestwidget.ui \
+    uis/logindialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

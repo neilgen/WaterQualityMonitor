@@ -30,7 +30,7 @@ QString UserData::login(QString name, QString passwd)
     QString res;
     if(name.isEmpty())
     {
-        res = QString("用户名为空");
+        res = QString::fromUtf8("用户名为空");
         return res;
     }
 
@@ -47,7 +47,7 @@ QString UserData::login(QString name, QString passwd)
     }
     if(matchUser.id <= 0 || matchUser.name.isEmpty())
     {
-        res = QString("不存在该用户");
+        res = QString::fromUtf8("不存在该用户");
         return res;
     }
 
@@ -66,7 +66,7 @@ QString UserData::login(QString name, QString passwd)
         }
         else
         {
-            res = QString("密码不匹配");
+            res = QString::fromUtf8("密码不匹配");
         }
     }
     else if(matchUser.encryption == USER_ENCRYPTION_DATE)
@@ -79,7 +79,7 @@ QString UserData::login(QString name, QString passwd)
         }
         else
         {
-            res = QString("密码不匹配");
+            res = QString::fromUtf8("密码不匹配");
         }
     }
     else if(matchUser.encryption == USER_ENCRYPTION_RANDOM)
@@ -92,12 +92,12 @@ QString UserData::login(QString name, QString passwd)
         }
         else
         {
-            res = QString("密码不匹配");
+            res = QString::fromUtf8("密码不匹配");
         }
     }
     else
     {
-        res = QString("加密方式无法识别");
+        res = QString::fromUtf8("加密方式无法识别");
     }
 
     //登录成功开始计算超时

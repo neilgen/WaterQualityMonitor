@@ -6,6 +6,8 @@
 #include <QtSql/QSqlDriver>
 #include <QtSql/QSqlQuery>
 
+#define DATETIME_FORMAT "yyyy-MM-dd hh:mm:ss"
+
 //数据库
 class WaterDB : public QObject
 {
