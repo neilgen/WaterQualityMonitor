@@ -3,6 +3,7 @@
 #include <QApplication>
 #include <QTextCodec>
 #include "datastruct/logdata.h"
+#include "uis/log_widget/logwidget.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,6 +12,9 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF8"));
 
     LogData::getIns();
+
+    LogWidget lw;
+    lw.show();
 
     MainWidget w;
     w.show();

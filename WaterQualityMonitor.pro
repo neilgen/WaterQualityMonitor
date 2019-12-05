@@ -30,7 +30,13 @@ SOURCES += \
     datastruct/userdata.cpp \
     datastruct/logdata.cpp \
     datastruct/waterdb.cpp \
-    uis/logindialog.cpp
+    uis/logindialog.cpp \
+    uis/log_widget/logactorwidget.cpp \
+    uis/log_widget/logrunningwidget.cpp \
+    uis/log_widget/logfaultwidget.cpp \
+    uis/log_widget/logwidget.cpp \
+    uis/log_widget/deviceinfowidget.cpp \
+    uis/log_widget/serverinfowidget.cpp
 
 HEADERS += \
     mainwidget.h \
@@ -50,7 +56,13 @@ HEADERS += \
     datastruct/logstruct.h \
     datastruct/logdata.h \
     datastruct/waterdb.h \
-    uis/logindialog.h
+    uis/logindialog.h \
+    uis/log_widget/logactorwidget.h \
+    uis/log_widget/logrunningwidget.h \
+    uis/log_widget/logfaultwidget.h \
+    uis/log_widget/logwidget.h \
+    uis/log_widget/deviceinfowidget.h \
+    uis/log_widget/serverinfowidget.h
 
 FORMS += \
     mainwidget.ui \
@@ -58,7 +70,13 @@ FORMS += \
     uis/curvefittingwidget.ui \
     uis/processsetwidget.ui \
     uis/examinetestwidget.ui \
-    uis/logindialog.ui
+    uis/logindialog.ui \
+    uis/log_widget/logactorwidget.ui \
+    uis/log_widget/logrunningwidget.ui \
+    uis/log_widget/logfaultwidget.ui \
+    uis/log_widget/logwidget.ui \
+    uis/log_widget/deviceinfowidget.ui \
+    uis/log_widget/serverinfowidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
