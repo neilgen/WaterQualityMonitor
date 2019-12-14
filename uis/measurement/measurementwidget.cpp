@@ -87,8 +87,7 @@ void MeasurementWidget::slotUserChanged()
     }
     else
     {
-        //先不隐藏，便于测试
-        //ui->frame_super->hide();
+        ui->frame_super->hide();
     }
 }
 
