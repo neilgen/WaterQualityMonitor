@@ -24,7 +24,7 @@ public:
     QList<Log> getLog(const LOG_TYPE t, const QDateTime beginDt, const QDateTime endDt) const;
 
 private:
-    void initDBTable();
+    void initLogTable();
 
 private:
 

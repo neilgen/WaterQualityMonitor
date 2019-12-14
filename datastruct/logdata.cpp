@@ -1,7 +1,4 @@
 #include "logdata.h"
-#include <QDir>
-#include <QDesktopServices>
-#include <QApplication>
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlError>
@@ -10,7 +7,7 @@
 LogData::LogData(QObject *parent) :
     QObject(parent)
 {
-    initDBTable();
+    initLogTable();
 }
 
 LogData *LogData::getIns()
@@ -127,7 +124,7 @@ QList<Log> LogData::getLog(const LOG_TYPE t, const QDateTime beginDt, const QDat
     return logs;
 }
 
-void LogData::initDBTable()
+void LogData::initLogTable()
 {
     QSqlDatabase *db = WaterDB::getIns()->getDB();
     QStringList tables = db->tables(QSql::Tables);

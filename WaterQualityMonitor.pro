@@ -36,7 +36,9 @@ SOURCES += \
     uis/log_widget/logfaultwidget.cpp \
     uis/log_widget/logwidget.cpp \
     uis/log_widget/deviceinfowidget.cpp \
-    uis/log_widget/serverinfowidget.cpp
+    uis/log_widget/serverinfowidget.cpp \
+    datastruct/measurementdata.cpp \
+    uis/measurement/measurementwidget.cpp
 
 HEADERS += \
     mainwidget.h \
@@ -62,7 +64,10 @@ HEADERS += \
     uis/log_widget/logfaultwidget.h \
     uis/log_widget/logwidget.h \
     uis/log_widget/deviceinfowidget.h \
-    uis/log_widget/serverinfowidget.h
+    uis/log_widget/serverinfowidget.h \
+    datastruct/measurementstruct.h \
+    datastruct/measurementdata.h \
+    uis/measurement/measurementwidget.h
 
 FORMS += \
     mainwidget.ui \
@@ -76,7 +81,8 @@ FORMS += \
     uis/log_widget/logfaultwidget.ui \
     uis/log_widget/logwidget.ui \
     uis/log_widget/deviceinfowidget.ui \
-    uis/log_widget/serverinfowidget.ui
+    uis/log_widget/serverinfowidget.ui \
+    uis/measurement/measurementwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

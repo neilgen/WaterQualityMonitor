@@ -5,5 +5,6 @@
 #include "datastruct/vardata.h"
 #include "datastruct/userdata.h"
 #include "datastruct/logdata.h"
+#include "datastruct/measurementdata.h"
 
 #endif // DATASTRUCT_H
