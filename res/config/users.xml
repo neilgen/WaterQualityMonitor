@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+    <user id="1" name="1" encryption="1" permission="1">
+        <passwd content="1"/>
+    </user>
+    <user id="2" name="2" encryption="1" permission="2">
+        <passwd content="2"/>
+    </user>
+    <user id="3" name="3" encryption="2" permission="3"></user>
+    <user id="4" name="admin" encryption="3" permission="4"></user>
+</users>

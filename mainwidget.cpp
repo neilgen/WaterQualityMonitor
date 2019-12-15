@@ -1,6 +1,8 @@
 #include "mainwidget.h"
 #include "ui_mainwidget.h"
 #include <QMenu>
+#include "uis/varsettable.h"
+
 MainWidget::MainWidget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::MainWidget)
@@ -86,4 +88,6 @@ void MainWidget::onCurveActionTriggered()
 void MainWidget::onVarActionTriggered()
 {
     qDebug() << "Other Actoin Triggered";
+    VarSetTable *t = new VarSetTable();
+    t->show();
 }
